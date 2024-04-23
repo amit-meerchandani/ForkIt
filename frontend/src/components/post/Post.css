@@ -1,0 +1,357 @@
+.post {
+  width: 60%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 0 1vmax 2vmax;
+  margin: 2vmax;
+}
+.postHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1vmax;
+}
+.postHeader > button {
+  border-radius: 100%;
+  color: rgba(0, 0, 0, 0.582);
+}
+.post > img {
+  width: 100%;
+}
+.postDetails-container {
+  display: flex;
+  padding: 1vmax 0px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.postDetails {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.post-Details-name .post-Details-username {
+  font-weight: normal;
+  font-size: 24px;
+  font-weight: bold;
+}
+.post-Details-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.post-Details-name h3 {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.post-Details-name a {
+  text-decoration: none !important;
+  color: rgb(0, 0, 0);
+}
+.postFooter > button {
+  color: rgba(0, 0, 0, 0.767);
+  margin: 0 1vmax;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+.caption-name {
+  margin-top: 10px !important;
+  color: black !important;
+  font-size: 25px !important;
+}
+.postFooter > button:hover {
+  transform: translateY(-4px);
+}
+.postFooter > button > svg {
+  font-size: 1.7vmax;
+}
+.DialogBox {
+  min-width: 500px;
+  height: 100vh;
+  padding: 2vmax;
+}
+
+.comments-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+/* Styles for comment form */
+.comment-form {
+  margin-bottom: 20px;
+}
+.comment-form form {
+  display: flex;
+  flex-direction: column;
+}
+.comment-form textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  resize: none;
+}
+.comment-form .submit-button {
+  width: 120px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.comment-form .submit-button:hover {
+  background-color: #0056b3;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.comment:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.comment-details {
+  flex: 1;
+}
+
+.name-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+.comment-text {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.edit-btn {
+  display: inline-block;
+  margin-right: 15px;
+}
+.delete-btn {
+  background-color: #dc3545;
+}
+.edit-btn:hover,
+.delete-btn:hover {
+  background-color: #218838;
+}
+
+.comment-form {
+  position: relative;
+}
+
+.textarea-container {
+  position: relative;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.generate-button {
+  position: absolute;
+  bottom: 26px;
+  right: 20px;
+  background: none;
+  color: blue;
+  border: none;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .post {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    padding: 0 0 4vw;
+    margin: 0;
+  }
+  .postFooter > button > svg {
+    font-size: 8vw;
+  }
+}
+.send-requested {
+  background: gray !important;
+}
+.post-search {
+  width: 60%;
+  margin: 2vmax;
+}
+/* background-image: linear-gradient(to right, #fff5bc, #cec1ff); */
+/* @import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Hind&display=swap"); */
+
+/* * {
+  -webkit-font-smoothing: antialiased;
+  color: #acbdce;
+} */
+
+/* :root {
+  --border-radius: 10px;
+} */
+
+/* body,
+html {
+  background: #e2e9f4;
+  display: grid;
+  height: 100%;
+  grid-template: 1fr/100%;
+  place-items: center;
+} */
+
+/* 
+.Card-search {
+  padding: 1px;
+  border-radius: var(--border-radius);
+  background: linear-gradient(
+    -67deg,
+    rgba(#c8d8e7, 0.7),
+    rgba(255, 255, 255, 0.8)
+  );
+  overflow: hidden;
+  box-shadow: -2px -2px 6px rgba(#fff, 0.6), 2px 2px 12px #c8d8e7;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.CardInner-search {
+  padding: 16px 16px;
+  background-color: #e2e9f4;
+  border-radius: var(--border-radius);
+}
+
+.container-search {
+  display: flex;
+}
+
+.Icon-search {
+  min-width: 46px;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  margin-right: 12px;
+  box-shadow: -2px -2px 6px rgba(#fff, 0.6), 2px 2px 12px #c8d8e7;
+
+  svg {
+    transform: translate(-1px, -1px);
+  }
+}
+
+.label-search {
+  font-family: "Hind", sans-serif;
+  display: block;
+  color: #3c4b66;
+  margin-bottom: 12px;
+  background: linear-gradient(45deg, rgba(#6b7b8f, 1), #3c4b66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.InputContainer-search {
+  width: 100%;
+}
+
+.input-search {
+  background-color: #e3edf7;
+  padding: 16px 32px;
+  border: none;
+  display: block;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  color: #a9b8c9;
+  -webkit-appearance: none;
+  transition: all 240ms ease-out;
+  width: 100%;
+
+  &::placeholder {
+    color: #6d7f8f;
+  }
+
+  &:focus {
+    outline: none;
+    color: #6d7f8f;
+    background-color: lighten(#e3edf7, 3%);
+  }
+}
+
+.InputContainer-search {
+  --top-shadow: inset 1px 1px 3px #c5d4e3, inset 2px 2px 6px #c5d4e3;
+  --bottom-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.7);
+
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+
+  &:before,
+  &:after {
+    left: 0;
+    top: 0;
+    display: block;
+    content: "";
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  &:before {
+    box-shadow: var(--bottom-shadow);
+  }
+
+  &:after {
+    box-shadow: var(--top-shadow);
+  }
+} */
